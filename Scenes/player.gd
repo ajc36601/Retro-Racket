@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+#
 var state = "free"
 var direction = "upLeft"
 var directionVector = Vector2(-1,-1)
