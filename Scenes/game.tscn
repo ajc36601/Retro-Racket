@@ -311,7 +311,7 @@ position = Vector2(2, -68)
 shape = SubResource("WorldBoundaryShape2D_str4e")
 
 [node name="player1" type="CharacterBody2D" parent="."]
-position = Vector2(50, 200)
+position = Vector2(100, 200)
 script = ExtResource("2_nab00")
 
 [node name="sprite" type="Sprite2D" parent="player1"]
@@ -319,7 +319,7 @@ texture = ExtResource("3_jng3d")
 hframes = 4
 
 [node name="collision" type="CollisionShape2D" parent="player1"]
-position = Vector2(0, 15)
+position = Vector2(0, 10)
 shape = SubResource("CircleShape2D_c1021")
 
 [node name="shadow" type="Sprite2D" parent="player1/collision"]
