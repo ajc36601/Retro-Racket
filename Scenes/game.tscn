@@ -319,7 +319,7 @@ texture = ExtResource("3_jng3d")
 hframes = 4
 
 [node name="collision" type="CollisionShape2D" parent="player1"]
-position = Vector2(0, 10)
+position = Vector2(0, 15)
 shape = SubResource("CircleShape2D_c1021")
 
 [node name="shadow" type="Sprite2D" parent="player1/collision"]
