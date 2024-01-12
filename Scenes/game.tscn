@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://dd5rh2h5ix30s"]
+[gd_scene load_steps=41 format=3 uid="uid://dd5rh2h5ix30s"]
 
 [ext_resource type="Texture2D" uid="uid://qaajgxc7styj" path="res://Assets/Court/Court_Artificial.png" id="1_eovlu"]
 [ext_resource type="Script" path="res://Scenes/player.gd" id="2_nab00"]
@@ -604,8 +604,11 @@ size = Vector2(207, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fp0nx"]
 size = Vector2(208, 15)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_pqf08"]
+radius = 2.23607
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_us556"]
-radius = 2.0
+radius = 2.06155
 
 [node name="game" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []
@@ -705,6 +708,11 @@ script = ExtResource("15_yy5rj")
 z_as_relative = false
 position = Vector2(0, -1)
 texture = ExtResource("16_w4cbf")
+
+[node name="hitBox" type="Area2D" parent="court/ySort/ball/sprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="court/ySort/ball/sprite/hitBox"]
+shape = SubResource("CircleShape2D_pqf08")
 
 [node name="collision" type="CollisionShape2D" parent="court/ySort/ball"]
 z_as_relative = false
