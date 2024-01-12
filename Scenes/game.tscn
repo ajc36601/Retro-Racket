@@ -310,6 +310,20 @@ position = Vector2(2, -68)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="court/topBoundary"]
 shape = SubResource("WorldBoundaryShape2D_str4e")
 
+[node name="leftBoundary" type="StaticBody2D" parent="court"]
+position = Vector2(-141, 17)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="court/leftBoundary"]
+rotation = -1.5708
+shape = SubResource("WorldBoundaryShape2D_str4e")
+
+[node name="rightBoundary" type="StaticBody2D" parent="court"]
+position = Vector2(141, 18)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="court/rightBoundary"]
+rotation = 1.5708
+shape = SubResource("WorldBoundaryShape2D_str4e")
+
 [node name="player1" type="CharacterBody2D" parent="."]
 position = Vector2(100, 200)
 script = ExtResource("2_nab00")
