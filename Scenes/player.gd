@@ -8,7 +8,10 @@ var speed = 90
 
 var input = Vector2.ZERO
 
-var hitDirection = Vector2(-1,-1)
+var hitDirection = Vector2(1,-1)
+
+var swingDelta = 0
+var swingLength = 0.5
 
 @onready var animationPlayer = $AnimationPlayer
 
@@ -40,11 +43,13 @@ func _physics_process(delta):
 			
 			if Input.is_action_pressed("swing"):
 				changeState("swing")
-				print("TEST")
 		"locked":
 			pass
 		"swing":
-			pass
+			swingDelta += delta
+			if swingDelta > swingLength:
+				changeState("free")
+			velocity = velocity.move_toward(Vector2.ZERO,acceleration*0.5)
 		"dive":
 			pass
 		"preserve":
@@ -63,7 +68,7 @@ func changeState(desiredState):
 		"locked":
 			pass
 		"swing":
-			pass
+			swingDelta = 0
 		"dive":
 			pass
 		"preserve":

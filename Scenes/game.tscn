@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://cu0pdb432mmb5"]
+[gd_scene load_steps=40 format=3 uid="uid://dd5rh2h5ix30s"]
 
 [ext_resource type="Texture2D" uid="uid://qaajgxc7styj" path="res://Assets/Court/Court_Artificial.png" id="1_eovlu"]
 [ext_resource type="Script" path="res://Scenes/player.gd" id="2_nab00"]
@@ -15,6 +15,9 @@
 [ext_resource type="Texture2D" uid="uid://csl7h4cgg015r" path="res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_North_Right_strip3.png" id="12_0kwk7"]
 [ext_resource type="Texture2D" uid="uid://dln5jkq0k1wjo" path="res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Left_strip3.png" id="13_uqsfg"]
 [ext_resource type="Texture2D" uid="uid://cuhlbhfdlav0g" path="res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Right_strip3.png" id="14_m3op7"]
+[ext_resource type="Script" path="res://Scenes/ball.gd" id="15_yy5rj"]
+[ext_resource type="Texture2D" uid="uid://bhfx6y30s4ad6" path="res://Assets/Court/ball.png" id="16_w4cbf"]
+[ext_resource type="Texture2D" uid="uid://c6spxxmclwwo4" path="res://Assets/Court/ball_shadow.png" id="17_atl74"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_kheet"]
 
@@ -61,6 +64,18 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [4]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("racketHitBox:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
 }
 
 [sub_resource type="Animation" id="Animation_lxb2w"]
@@ -391,10 +406,89 @@ tracks/2/keys = {
 "values": [4]
 }
 
+[sub_resource type="Animation" id="Animation_hqjuu"]
+resource_name = "swing_downLeft"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("14_m3op7")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_grdc7"]
+resource_name = "swing_downRight"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("13_uqsfg")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
 [sub_resource type="Animation" id="Animation_2onu4"]
 resource_name = "swing_north_left"
 length = 0.3
-loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -435,7 +529,6 @@ tracks/2/keys = {
 [sub_resource type="Animation" id="Animation_moet7"]
 resource_name = "swing_upRight"
 length = 0.3
-loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -472,87 +565,17 @@ tracks/2/keys = {
 "update": 1,
 "values": [3]
 }
-
-[sub_resource type="Animation" id="Animation_grdc7"]
-resource_name = "swing_downRight"
-length = 0.3
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [0, 1, 2]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("sprite:texture")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("13_uqsfg")]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("sprite:hframes")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [3]
-}
-
-[sub_resource type="Animation" id="Animation_hqjuu"]
-resource_name = "swing_downLeft"
-length = 0.3
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [0, 1, 2]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("sprite:texture")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("14_m3op7")]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("sprite:hframes")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [3]
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("racketHitBox:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -1.5708]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1pvhy"]
@@ -572,59 +595,69 @@ _data = {
 "swing_upRight": SubResource("Animation_moet7")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uc0gr"]
+size = Vector2(10, 6)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_muk1b"]
 size = Vector2(207, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fp0nx"]
 size = Vector2(208, 15)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_us556"]
+radius = 2.0
+
 [node name="game" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []
 
 [node name="court" type="Sprite2D" parent="."]
+z_index = -4
 position = Vector2(136, 128)
 texture = ExtResource("1_eovlu")
 
 [node name="bottomBoundary" type="StaticBody2D" parent="court"]
 position = Vector2(2, 142)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="court/bottomBoundary"]
+[node name="collision" type="CollisionShape2D" parent="court/bottomBoundary"]
 shape = SubResource("WorldBoundaryShape2D_kheet")
 
 [node name="topBoundary" type="StaticBody2D" parent="court"]
 position = Vector2(2, -68)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="court/topBoundary"]
+[node name="collision" type="CollisionShape2D" parent="court/topBoundary"]
 shape = SubResource("WorldBoundaryShape2D_str4e")
 
 [node name="leftBoundary" type="StaticBody2D" parent="court"]
 position = Vector2(-141, 17)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="court/leftBoundary"]
+[node name="collision" type="CollisionShape2D" parent="court/leftBoundary"]
 rotation = -1.5708
 shape = SubResource("WorldBoundaryShape2D_str4e")
 
 [node name="rightBoundary" type="StaticBody2D" parent="court"]
 position = Vector2(141, 18)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="court/rightBoundary"]
+[node name="collision" type="CollisionShape2D" parent="court/rightBoundary"]
 rotation = 1.5708
 shape = SubResource("WorldBoundaryShape2D_str4e")
 
 [node name="ySort" type="Node2D" parent="court"]
+z_as_relative = false
 y_sort_enabled = true
 
 [node name="player1" type="CharacterBody2D" parent="court/ySort"]
+z_as_relative = false
 y_sort_enabled = true
-position = Vector2(-36, 72)
+position = Vector2(-36, 25)
 script = ExtResource("2_nab00")
 
 [node name="sprite" type="Sprite2D" parent="court/ySort/player1"]
+z_as_relative = false
 texture = ExtResource("3_gegrb")
+offset = Vector2(0, -10)
 hframes = 4
 
 [node name="collision" type="CollisionShape2D" parent="court/ySort/player1"]
-position = Vector2(0, 10)
 shape = SubResource("CircleShape2D_c1021")
 
 [node name="shadow" type="Sprite2D" parent="court/ySort/player1/collision"]
@@ -634,19 +667,54 @@ libraries = {
 "": SubResource("AnimationLibrary_1pvhy")
 }
 
-[node name="Net" type="StaticBody2D" parent="court/ySort"]
-y_sort_enabled = true
+[node name="racketHitBox" type="Area2D" parent="court/ySort/player1"]
+visible = false
+position = Vector2(2, 1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="court/ySort/Net"]
-position = Vector2(0.5, 31.5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="court/ySort/player1/racketHitBox"]
+position = Vector2(5, 0)
+shape = SubResource("RectangleShape2D_uc0gr")
+
+[node name="Net" type="StaticBody2D" parent="court/ySort"]
+z_as_relative = false
+y_sort_enabled = true
+position = Vector2(0, 32)
+
+[node name="collision" type="CollisionShape2D" parent="court/ySort/Net"]
 shape = SubResource("RectangleShape2D_muk1b")
 
 [node name="sprite" type="Sprite2D" parent="court/ySort/Net"]
-position = Vector2(0, 24)
+z_as_relative = false
+position = Vector2(0, -8)
 texture = ExtResource("11_4d87l")
 
-[node name="Area2D" type="Area2D" parent="court/ySort/Net"]
+[node name="hitBox" type="Area2D" parent="court/ySort/Net"]
+visible = false
+collision_layer = 4
+collision_mask = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="court/ySort/Net/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="court/ySort/Net/hitBox"]
 position = Vector2(0, 24.5)
 shape = SubResource("RectangleShape2D_fp0nx")
+
+[node name="ball" type="CharacterBody2D" parent="court/ySort"]
+z_as_relative = false
+y_sort_enabled = true
+position = Vector2(50, 0)
+script = ExtResource("15_yy5rj")
+
+[node name="sprite" type="Sprite2D" parent="court/ySort/ball"]
+z_as_relative = false
+position = Vector2(0, -1)
+texture = ExtResource("16_w4cbf")
+
+[node name="collision" type="CollisionShape2D" parent="court/ySort/ball"]
+z_as_relative = false
+position = Vector2(0, 0.5)
+shape = SubResource("CircleShape2D_us556")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="shadow" type="Sprite2D" parent="court/ySort/ball/collision"]
+z_index = -2
+z_as_relative = false
+texture = ExtResource("17_atl74")
