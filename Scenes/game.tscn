@@ -1,16 +1,20 @@
-[gd_scene load_steps=26 format=3 uid="uid://c3fpjesdyvhch"]
+[gd_scene load_steps=35 format=3 uid="uid://cu0pdb432mmb5"]
 
-[ext_resource type="Texture2D" uid="uid://qaajgxc7styj" path="res://Assets/Court_Artificial.png" id="1_hogsx"]
+[ext_resource type="Texture2D" uid="uid://qaajgxc7styj" path="res://Assets/Court/Court_Artificial.png" id="1_eovlu"]
 [ext_resource type="Script" path="res://Scenes/player.gd" id="2_nab00"]
-[ext_resource type="Texture2D" uid="uid://q7aj1255uc6u" path="res://Assets/Player_Female_A_T1_Idle_South_Right_strip4.png" id="3_4uwem"]
-[ext_resource type="Texture2D" uid="uid://fa2vhe6g4epc" path="res://Assets/Player_Female_A_T1_Idle_South_Left_strip4.png" id="3_jng3d"]
-[ext_resource type="Texture2D" uid="uid://dgyi6sn2u5o5" path="res://Assets/Player_Female_A_T1_Run_North_Left_strip4.png" id="4_v43v3"]
-[ext_resource type="Texture2D" uid="uid://cyay3wcg3asrn" path="res://Assets/Player_Female_A_T1_Run_North_Right_strip4.png" id="5_2nny6"]
-[ext_resource type="Texture2D" uid="uid://bvelbk7mdl81n" path="res://Assets/Player_Female_A_T1_Run_South_Left_strip4.png" id="6_2gvrr"]
-[ext_resource type="Texture2D" uid="uid://1sf16djo1qjl" path="res://Assets/Player_Female_A_T1_Run_South_Right_strip4.png" id="7_ijh24"]
-[ext_resource type="Texture2D" uid="uid://cq0c3wd8vn67w" path="res://Assets/Player_Female_A_T1_Idle_North_Left_strip4.png" id="8_we26o"]
-[ext_resource type="Texture2D" uid="uid://cvv5xki450i2v" path="res://Assets/Player_Female_A_T1_Idle_North_Right_strip4.png" id="9_jxvps"]
-[ext_resource type="Texture2D" uid="uid://c2fsa8lgidlfh" path="res://Assets/Net.png" id="11_n6jd7"]
+[ext_resource type="Texture2D" uid="uid://fa2vhe6g4epc" path="res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_South_Left_strip4.png" id="3_gegrb"]
+[ext_resource type="Texture2D" uid="uid://q7aj1255uc6u" path="res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_South_Right_strip4.png" id="4_pvwl1"]
+[ext_resource type="Texture2D" uid="uid://cq0c3wd8vn67w" path="res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_North_Left_strip4.png" id="5_efm2s"]
+[ext_resource type="Texture2D" uid="uid://cvv5xki450i2v" path="res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_North_Right_strip4.png" id="6_ah6yl"]
+[ext_resource type="Texture2D" uid="uid://bvelbk7mdl81n" path="res://Assets/Players/Female1/run/Player_Female_A_T1_Run_South_Left_strip4.png" id="7_7d34a"]
+[ext_resource type="Texture2D" uid="uid://1sf16djo1qjl" path="res://Assets/Players/Female1/run/Player_Female_A_T1_Run_South_Right_strip4.png" id="8_6px6m"]
+[ext_resource type="Texture2D" uid="uid://dgyi6sn2u5o5" path="res://Assets/Players/Female1/run/Player_Female_A_T1_Run_North_Left_strip4.png" id="9_s7and"]
+[ext_resource type="Texture2D" uid="uid://cyay3wcg3asrn" path="res://Assets/Players/Female1/run/Player_Female_A_T1_Run_North_Right_strip4.png" id="10_tkpj7"]
+[ext_resource type="Texture2D" uid="uid://c2fsa8lgidlfh" path="res://Assets/Court/Net.png" id="11_4d87l"]
+[ext_resource type="Texture2D" uid="uid://dup85susvrorf" path="res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_North_Left_strip3.png" id="11_tapou"]
+[ext_resource type="Texture2D" uid="uid://csl7h4cgg015r" path="res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_North_Right_strip3.png" id="12_0kwk7"]
+[ext_resource type="Texture2D" uid="uid://dln5jkq0k1wjo" path="res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Left_strip3.png" id="13_uqsfg"]
+[ext_resource type="Texture2D" uid="uid://cuhlbhfdlav0g" path="res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Right_strip3.png" id="14_m3op7"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_kheet"]
 
@@ -44,7 +48,19 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("3_jng3d")]
+"values": [ExtResource("3_gegrb")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
 }
 
 [sub_resource type="Animation" id="Animation_lxb2w"]
@@ -73,7 +89,19 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("3_jng3d")]
+"values": [ExtResource("3_gegrb")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
 }
 
 [sub_resource type="Animation" id="Animation_ajvtv"]
@@ -102,7 +130,19 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("3_4uwem")]
+"values": [ExtResource("4_pvwl1")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
 }
 
 [sub_resource type="Animation" id="Animation_cruon"]
@@ -131,7 +171,19 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("8_we26o")]
+"values": [ExtResource("5_efm2s")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
 }
 
 [sub_resource type="Animation" id="Animation_2fo4n"]
@@ -160,7 +212,19 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("9_jxvps")]
+"values": [ExtResource("6_ah6yl")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
 }
 
 [sub_resource type="Animation" id="Animation_wbrrr"]
@@ -189,7 +253,19 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("6_2gvrr")]
+"values": [ExtResource("7_7d34a")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
 }
 
 [sub_resource type="Animation" id="Animation_mx3ha"]
@@ -218,7 +294,19 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("7_ijh24")]
+"values": [ExtResource("8_6px6m")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
 }
 
 [sub_resource type="Animation" id="Animation_j6i87"]
@@ -247,7 +335,19 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("4_v43v3")]
+"values": [ExtResource("9_s7and")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
 }
 
 [sub_resource type="Animation" id="Animation_t5lc8"]
@@ -276,7 +376,183 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("5_2nny6")]
+"values": [ExtResource("10_tkpj7")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="Animation" id="Animation_2onu4"]
+resource_name = "swing_north_left"
+length = 0.3
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("11_tapou")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_moet7"]
+resource_name = "swing_upRight"
+length = 0.3
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("12_0kwk7")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_grdc7"]
+resource_name = "swing_downRight"
+length = 0.3
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("13_uqsfg")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_hqjuu"]
+resource_name = "swing_downLeft"
+length = 0.3
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("14_m3op7")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sprite:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1pvhy"]
@@ -289,18 +565,25 @@ _data = {
 "run_downLeft": SubResource("Animation_wbrrr"),
 "run_downRight": SubResource("Animation_mx3ha"),
 "run_upLeft": SubResource("Animation_j6i87"),
-"run_upRight": SubResource("Animation_t5lc8")
+"run_upRight": SubResource("Animation_t5lc8"),
+"swing_downLeft": SubResource("Animation_hqjuu"),
+"swing_downRight": SubResource("Animation_grdc7"),
+"swing_upLeft": SubResource("Animation_2onu4"),
+"swing_upRight": SubResource("Animation_moet7")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_muk1b"]
-size = Vector2(207, 3)
+size = Vector2(207, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fp0nx"]
+size = Vector2(208, 15)
 
 [node name="game" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []
 
 [node name="court" type="Sprite2D" parent="."]
 position = Vector2(136, 128)
-texture = ExtResource("1_hogsx")
+texture = ExtResource("1_eovlu")
 
 [node name="bottomBoundary" type="StaticBody2D" parent="court"]
 position = Vector2(2, 142)
@@ -337,7 +620,7 @@ position = Vector2(-36, 72)
 script = ExtResource("2_nab00")
 
 [node name="sprite" type="Sprite2D" parent="court/ySort/player1"]
-texture = ExtResource("3_jng3d")
+texture = ExtResource("3_gegrb")
 hframes = 4
 
 [node name="collision" type="CollisionShape2D" parent="court/ySort/player1"]
@@ -360,4 +643,10 @@ shape = SubResource("RectangleShape2D_muk1b")
 
 [node name="sprite" type="Sprite2D" parent="court/ySort/Net"]
 position = Vector2(0, 24)
-texture = ExtResource("11_n6jd7")
+texture = ExtResource("11_4d87l")
+
+[node name="Area2D" type="Area2D" parent="court/ySort/Net"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="court/ySort/Net/Area2D"]
+position = Vector2(0, 24.5)
+shape = SubResource("RectangleShape2D_fp0nx")

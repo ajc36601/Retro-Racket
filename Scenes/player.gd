@@ -8,7 +8,7 @@ var speed = 90
 
 var input = Vector2.ZERO
 
-var hitDirection = Vector2(1,-1)
+var hitDirection = Vector2(-1,-1)
 
 @onready var animationPlayer = $AnimationPlayer
 
@@ -37,6 +37,10 @@ func _physics_process(delta):
 				animationPlayer.play("idle_"+direction)
 			else:
 				animationPlayer.play("run_"+direction)
+			
+			if Input.is_action_pressed("swing"):
+				changeState("swing")
+				print("TEST")
 		"locked":
 			pass
 		"swing":
@@ -73,13 +77,15 @@ func changeState(desiredState):
 		"locked":
 			pass
 		"swing":
-			pass
+			animationPlayer.play("swing_"+getDirectionString(hitDirection))
 		"dive":
 			pass
 		"preserve":
 			pass
 		"serve":
 			pass
+	
+	state = desiredState
 
 func getDirectionString(vector):
 	if vector == Vector2(-1,-1):
