@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crjtlfceyf8dr"
-path="res://.godot/imported/NES_Court_1_Artificial_BG.png-b4a27b476d2ec35107a44b57c3702355.ctex"
+uid="uid://qaajgxc7styj"
+path="res://.godot/imported/Court_Artificial.png-ccb661f4bd01a34ad41d213b0ee333c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/NES_Court_1_Artificial_BG.png"
-dest_files=["res://.godot/imported/NES_Court_1_Artificial_BG.png-b4a27b476d2ec35107a44b57c3702355.ctex"]
+source_file="res://Assets/Court_Artificial.png"
+dest_files=["res://.godot/imported/Court_Artificial.png-ccb661f4bd01a34ad41d213b0ee333c2.ctex"]
 
 [params]
 
