@@ -13,6 +13,7 @@ var hitDirection = Vector2(1,-1)
 var swingDelta = 0
 var swingLength = 0.5
 
+@onready var racketShadowHitBox = get_node("RacketShadowHitBox")
 @onready var animationPlayer = $AnimationPlayer
 
 func _physics_process(delta):
@@ -69,6 +70,7 @@ func changeState(desiredState):
 			pass
 		"swing":
 			swingDelta = 0
+			racketShadowHitBox.set_monitorable(false)
 		"dive":
 			pass
 		"preserve":
@@ -83,6 +85,7 @@ func changeState(desiredState):
 			pass
 		"swing":
 			animationPlayer.play("swing_"+getDirectionString(hitDirection))
+			racketShadowHitBox.set_monitorable(true)
 		"dive":
 			pass
 		"preserve":
