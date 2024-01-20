@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://dd5rh2h5ix30s"]
+[gd_scene load_steps=45 format=3 uid="uid://dd5rh2h5ix30s"]
 
 [ext_resource type="Texture2D" uid="uid://qaajgxc7styj" path="res://Assets/Court/Court_Artificial.png" id="1_eovlu"]
 [ext_resource type="Script" path="res://Scenes/player.gd" id="2_nab00"]
@@ -21,11 +21,23 @@
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_kheet"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s4tgj"]
+size = Vector2(279, 1)
+
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_str4e"]
 normal = Vector2(0, 1)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_c1021"]
-radius = 4.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t513v"]
+size = Vector2(279, 2)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qwp8s"]
+size = Vector2(2, 221)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i10pg"]
+size = Vector2(2, 205)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pdyre"]
+size = Vector2(6, 3)
 
 [sub_resource type="Animation" id="Animation_n44un"]
 length = 0.001
@@ -624,12 +636,29 @@ position = Vector2(2, 142)
 [node name="collision" type="CollisionShape2D" parent="court/bottomBoundary"]
 shape = SubResource("WorldBoundaryShape2D_kheet")
 
+[node name="bottomBoundary" type="Area2D" parent="court/bottomBoundary"]
+collision_layer = 64
+collision_mask = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="court/bottomBoundary/bottomBoundary"]
+position = Vector2(-1.5, -1.5)
+shape = SubResource("RectangleShape2D_s4tgj")
+
 [node name="topBoundary" type="StaticBody2D" parent="court"]
 position = Vector2(2, -68)
 
 [node name="collision" type="CollisionShape2D" parent="court/topBoundary"]
 position = Vector2(0, 2)
 shape = SubResource("WorldBoundaryShape2D_str4e")
+
+[node name="topBoundary" type="Area2D" parent="court/topBoundary"]
+position = Vector2(0, 15)
+collision_layer = 64
+collision_mask = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="court/topBoundary/topBoundary"]
+position = Vector2(-1.5, -11)
+shape = SubResource("RectangleShape2D_t513v")
 
 [node name="leftBoundary" type="StaticBody2D" parent="court"]
 position = Vector2(-141, 17)
@@ -638,12 +667,28 @@ position = Vector2(-141, 17)
 rotation = -1.5708
 shape = SubResource("WorldBoundaryShape2D_str4e")
 
+[node name="leftBoundary" type="Area2D" parent="court/leftBoundary"]
+collision_layer = 64
+collision_mask = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="court/leftBoundary/leftBoundary"]
+position = Vector2(2, 13.5)
+shape = SubResource("RectangleShape2D_qwp8s")
+
 [node name="rightBoundary" type="StaticBody2D" parent="court"]
 position = Vector2(141, 18)
 
 [node name="collision" type="CollisionShape2D" parent="court/rightBoundary"]
 rotation = 1.5708
 shape = SubResource("WorldBoundaryShape2D_str4e")
+
+[node name="rightBoundary" type="Area2D" parent="court/rightBoundary"]
+collision_layer = 64
+collision_mask = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="court/rightBoundary/rightBoundary"]
+position = Vector2(-3, 19.5)
+shape = SubResource("RectangleShape2D_i10pg")
 
 [node name="ySort" type="Node2D" parent="court"]
 z_as_relative = false
@@ -664,7 +709,8 @@ offset = Vector2(0, -10)
 hframes = 4
 
 [node name="collision" type="CollisionShape2D" parent="court/ySort/player1"]
-shape = SubResource("CircleShape2D_c1021")
+position = Vector2(1, -0.5)
+shape = SubResource("RectangleShape2D_pdyre")
 
 [node name="shadow" type="Sprite2D" parent="court/ySort/player1/collision"]
 
@@ -743,8 +789,8 @@ z_as_relative = false
 texture = ExtResource("17_atl74")
 
 [node name="BallShadowHitBox" type="Area2D" parent="court/ySort/ball"]
-collision_layer = 32
-collision_mask = 32
+collision_layer = 96
+collision_mask = 96
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="court/ySort/ball/BallShadowHitBox"]
 z_as_relative = false

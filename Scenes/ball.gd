@@ -7,15 +7,17 @@ var zVelocity = -115
 var gravity = 125
 
 var netCollision = false
+var racketCollision = false
 
 @onready var sprite = get_node("sprite")
 @onready var ballHitBox = get_node("sprite/BallHitBox")
 @onready var ballShadowHitBox = get_node("BallShadowHitBox")
 
 func _ready():
-	velocity = Vector2(5,25)
+	velocity = Vector2(-70,0)
 
 func _physics_process(delta):
+	print(get_position())
 	match state:
 		"bouncing":
 			if sprite.position.y >= -1 && zVelocity > 0:
@@ -78,15 +80,20 @@ func _on_hit_box_area_entered(area):
 			velocity = velocity*-0.7
 
 func _on_shadow_hit_box_area_entered(area):
-	if area.get_name().contains("Racket") && sprite.position.y > -20:
+	print(area)
+	if area.get_name().contains("Racket") && sprite.position.y > -20 && racketCollision == false:
+		racketCollision = true
+		netCollision = false
 		velocity = velocity*-2
 		zVelocity = -50
-		netCollision = false
 		zVelocityPrev = 0
-	if ballHitBox.has_overlapping_areas() && netCollision == false:
+	elif ballHitBox.has_overlapping_areas() && netCollision == false:
 		netCollision = true
 		if velocity.y  > 0 && position.y >= 31 || velocity.y < 0 && position.y <=33:
 			velocity = velocity*0.5
 			zVelocity = zVelocity*0.5
 		else:
 			velocity = velocity*-0.7
+	elif area.get_name().contains("Boundary"):
+		velocity = -velocity*0.9
+		print("Test")
