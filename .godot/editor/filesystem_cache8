@@ -1,8 +1,18 @@
+<<<<<<< Updated upstream
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1706164482
 export_presets.cfg::TextFile::-1::1706164130::0::1::::<><>::
 ::res://Assets/::1705083248
 ::res://Assets/Court/::1706162721
+=======
+2a60927148abd1d33b818b535e306557
+::res://::1705713571
+::res://Assets/::1705083248
+::res://Assets/Court/::1705800551
+ball roll diagonal.png::CompressedTexture2D::9035679230911819477::1705800551::1705800551::1::::<><>::
+ball roll horizontal.png::CompressedTexture2D::8105518980080479498::1705800550::1705800551::1::::<><>::
+ball roll vertical.png::CompressedTexture2D::3626794439418018255::1705800550::1705800551::1::::<><>::
+>>>>>>> Stashed changes
 ball.png::CompressedTexture2D::2889517633350313773::1705083248::1705083248::1::::<><>::
 ball_shadow.png::CompressedTexture2D::6986807374570759025::1705083248::1705083248::1::::<><>::
 Chair_Left.png::CompressedTexture2D::7731178988976385850::1705083248::1705083248::1::::<><>::
@@ -26,6 +36,7 @@ Player_Female_A_T1_Hit_North_Left_strip3.png::CompressedTexture2D::8596062801892
 Player_Female_A_T1_Hit_North_Right_strip3.png::CompressedTexture2D::6060905679039710941::1705083248::1705083248::1::::<><>::
 Player_Female_A_T1_Hit_South_Left_strip3.png::CompressedTexture2D::7960014374929243176::1705083248::1705083248::1::::<><>::
 Player_Female_A_T1_Hit_South_Right_strip3.png::CompressedTexture2D::6191738932678108412::1705083248::1705083248::1::::<><>::
+<<<<<<< Updated upstream
 ::res://icons/::1706164878
 40x40.png::CompressedTexture2D::7255291446946402413::1706164878::1706164878::1::::<><>::
 58x58.png::CompressedTexture2D::8398118499244166731::1706164878::1706164878::1::::<><>::
@@ -41,4 +52,9 @@ Player_Female_A_T1_Hit_South_Right_strip3.png::CompressedTexture2D::619173893267
 ::res://Scenes/::1706162721
 ball.gd::GDScript::-1::1706162721::0::1::::<>CharacterBody2D<>::
 game.tscn::PackedScene::7432806034368333196::1706162721::0::1::::<><>::uid://qaajgxc7styj::::res://Assets/Court/Court_Artificial.png<>res://Scenes/player.gd<>uid://fa2vhe6g4epc::::res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_South_Left_strip4.png<>uid://q7aj1255uc6u::::res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_South_Right_strip4.png<>uid://cq0c3wd8vn67w::::res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_North_Left_strip4.png<>uid://cvv5xki450i2v::::res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_North_Right_strip4.png<>uid://bvelbk7mdl81n::::res://Assets/Players/Female1/run/Player_Female_A_T1_Run_South_Left_strip4.png<>uid://1sf16djo1qjl::::res://Assets/Players/Female1/run/Player_Female_A_T1_Run_South_Right_strip4.png<>uid://dgyi6sn2u5o5::::res://Assets/Players/Female1/run/Player_Female_A_T1_Run_North_Left_strip4.png<>uid://cyay3wcg3asrn::::res://Assets/Players/Female1/run/Player_Female_A_T1_Run_North_Right_strip4.png<>uid://c2fsa8lgidlfh::::res://Assets/Court/Net.png<>uid://dup85susvrorf::::res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_North_Left_strip3.png<>uid://csl7h4cgg015r::::res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_North_Right_strip3.png<>uid://dln5jkq0k1wjo::::res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Left_strip3.png<>uid://cuhlbhfdlav0g::::res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Right_strip3.png<>res://Scenes/ball.gd<>uid://bhfx6y30s4ad6::::res://Assets/Court/ball.png<>uid://c6spxxmclwwo4::::res://Assets/Court/ball_shadow.png
+=======
+::res://Scenes/::1705714373
+ball.gd::GDScript::-1::1705714360::0::1::::<>CharacterBody2D<>::
+game.tscn::PackedScene::7432806034368333196::1705714373::0::1::::<><>::uid://qaajgxc7styj<>res://Scenes/player.gd<>uid://fa2vhe6g4epc<>uid://q7aj1255uc6u<>uid://cq0c3wd8vn67w<>uid://cvv5xki450i2v<>uid://bvelbk7mdl81n<>uid://1sf16djo1qjl<>uid://dgyi6sn2u5o5<>uid://cyay3wcg3asrn<>uid://c2fsa8lgidlfh<>uid://dup85susvrorf<>uid://csl7h4cgg015r<>uid://dln5jkq0k1wjo<>uid://cuhlbhfdlav0g<>res://Scenes/ball.gd<>uid://bhfx6y30s4ad6<>uid://c6spxxmclwwo4
+>>>>>>> Stashed changes
 player.gd::GDScript::-1::1705711923::0::1::::<>CharacterBody2D<>::

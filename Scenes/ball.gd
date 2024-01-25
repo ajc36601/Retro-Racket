@@ -14,10 +14,14 @@ var racketCollision = false
 @onready var ballShadowHitBox = get_node("BallShadowHitBox")
 
 func _ready():
+<<<<<<< Updated upstream
 	velocity = Vector2(0,50)
+=======
+	velocity = Vector2(0,35)
+>>>>>>> Stashed changes
 
 func _physics_process(delta):
-	print(get_position())
+	print(sprite.get_position().y)
 	match state:
 		"bouncing":
 			if sprite.position.y >= -1 && zVelocity > 0:
@@ -33,6 +37,7 @@ func _physics_process(delta):
 				pass
 			sprite.move_local_y(zVelocity*delta)
 			zVelocity = zVelocity+gravity*delta
+			sprite.set_scale(Vector2(abs(sprite.get_position().y)/100+0.5,abs(sprite.get_position().y)/100+0.5))
 			move_and_slide()
 		"rolling":
 			pass

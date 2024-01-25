@@ -16,8 +16,8 @@
 [ext_resource type="Texture2D" uid="uid://dln5jkq0k1wjo" path="res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Left_strip3.png" id="13_uqsfg"]
 [ext_resource type="Texture2D" uid="uid://cuhlbhfdlav0g" path="res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Right_strip3.png" id="14_m3op7"]
 [ext_resource type="Script" path="res://Scenes/ball.gd" id="15_yy5rj"]
-[ext_resource type="Texture2D" uid="uid://bhfx6y30s4ad6" path="res://Assets/Court/ball.png" id="16_w4cbf"]
 [ext_resource type="Texture2D" uid="uid://c6spxxmclwwo4" path="res://Assets/Court/ball_shadow.png" id="17_atl74"]
+[ext_resource type="Texture2D" uid="uid://d1y7k1hwny4vh" path="res://Assets/Court/ball roll diagonal.png" id="17_n3ayq"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_kheet"]
 
@@ -709,7 +709,7 @@ offset = Vector2(0, -10)
 hframes = 4
 
 [node name="collision" type="CollisionShape2D" parent="court/ySort/player1"]
-position = Vector2(1, -0.5)
+position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_pdyre")
 
 [node name="shadow" type="Sprite2D" parent="court/ySort/player1/collision"]
@@ -768,7 +768,9 @@ script = ExtResource("15_yy5rj")
 [node name="sprite" type="Sprite2D" parent="court/ySort/ball"]
 z_as_relative = false
 position = Vector2(0, -1)
-texture = ExtResource("16_w4cbf")
+texture = ExtResource("17_n3ayq")
+hframes = 4
+vframes = 4
 
 [node name="BallHitBox" type="Area2D" parent="court/ySort/ball/sprite"]
 collision_layer = 16
