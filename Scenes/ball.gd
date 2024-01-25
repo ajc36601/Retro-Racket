@@ -14,11 +14,7 @@ var racketCollision = false
 @onready var ballShadowHitBox = get_node("BallShadowHitBox")
 
 func _ready():
-<<<<<<< Updated upstream
 	velocity = Vector2(0,50)
-=======
-	velocity = Vector2(0,35)
->>>>>>> Stashed changes
 
 func _physics_process(delta):
 	print(sprite.get_position().y)

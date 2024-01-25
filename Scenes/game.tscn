@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://cuhlbhfdlav0g" path="res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Right_strip3.png" id="14_m3op7"]
 [ext_resource type="Script" path="res://Scenes/ball.gd" id="15_yy5rj"]
 [ext_resource type="Texture2D" uid="uid://c6spxxmclwwo4" path="res://Assets/Court/ball_shadow.png" id="17_atl74"]
-[ext_resource type="Texture2D" uid="uid://d1y7k1hwny4vh" path="res://Assets/Court/ball roll diagonal.png" id="17_n3ayq"]
+[ext_resource type="Texture2D" path="res://Assets/Court/ball roll diagonal.png" id="17_n3ayq"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_kheet"]
 
