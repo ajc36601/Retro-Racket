@@ -14,7 +14,7 @@ var racketCollision = false
 @onready var ballShadowHitBox = get_node("BallShadowHitBox")
 
 func _ready():
-	velocity = Vector2(-70,0)
+	velocity = Vector2(0,50)
 
 func _physics_process(delta):
 	print(get_position())
