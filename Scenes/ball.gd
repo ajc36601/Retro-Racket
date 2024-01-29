@@ -5,6 +5,7 @@ var state = "bouncing"
 var zVelocityPrev = 0
 var zVelocity = -115
 var gravity = 125
+var size = 4
 
 var netCollision = false
 var racketCollision = false
@@ -12,6 +13,7 @@ var racketCollision = false
 @onready var sprite = get_node("sprite")
 @onready var ballHitBox = get_node("sprite/BallHitBox")
 @onready var ballShadowHitBox = get_node("BallShadowHitBox")
+@onready var player = get_node("AnimationPlayer")
 
 func _ready():
 	velocity = Vector2(0,50)
@@ -33,9 +35,14 @@ func _physics_process(delta):
 				pass
 			sprite.move_local_y(zVelocity*delta)
 			zVelocity = zVelocity+gravity*delta
-			sprite.set_scale(Vector2(abs(sprite.get_position().y)/100+0.5,abs(sprite.get_position().y)/100+0.5))
+			if sprite.position.y <= -100:
+				size = 8
+			elif sprite.position.y <= -50:
+				size = 6
+			else:
+				size = 4
 			move_and_slide()
-		"rolling":
+			player.play("4down")
 			pass
 		"still":
 			pass
