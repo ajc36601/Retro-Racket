@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf1eblagtfi8j"
-path="res://.godot/imported/ball roll horizontal.png-feb02334e7d00fc65032e649eaa0c61f.ctex"
+uid="uid://bqxil4h5vkj0w"
+path="res://.godot/imported/ball roll downleft.png-3f84eeec3088c769cc82fa4d361efa25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Ball/8x8/ball roll horizontal.png"
-dest_files=["res://.godot/imported/ball roll horizontal.png-feb02334e7d00fc65032e649eaa0c61f.ctex"]
+source_file="res://Assets/Ball/8x8/ball roll downleft.png"
+dest_files=["res://.godot/imported/ball roll downleft.png-3f84eeec3088c769cc82fa4d361efa25.ctex"]
 
 [params]
 

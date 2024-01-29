@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qfikmw0i32mb"
-path="res://.godot/imported/ball roll vertical.png-a1d898f470ec7204d0b89b7be086f822.ctex"
+uid="uid://dvtfplgy6tm7m"
+path="res://.godot/imported/ball roll upright.png-c33cc26c5e1648a6416c97fbc4544157.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Ball/8x8/ball roll vertical.png"
-dest_files=["res://.godot/imported/ball roll vertical.png-a1d898f470ec7204d0b89b7be086f822.ctex"]
+source_file="res://Assets/Ball/8x8/ball roll upright.png"
+dest_files=["res://.godot/imported/ball roll upright.png-c33cc26c5e1648a6416c97fbc4544157.ctex"]
 
 [params]
 
