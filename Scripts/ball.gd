@@ -3,8 +3,9 @@ extends CharacterBody2D
 var state = "bouncing"
 
 var zVelocityPrev = 0
-var zVelocity = -115
+var zVelocity = -90
 var gravity = 125
+var friction = 20
 var size = 4
 
 var netCollision = false
@@ -16,17 +17,19 @@ var racketCollision = false
 @onready var player = get_node("AnimationPlayer")
 
 func _ready():
-	velocity = Vector2(0,50)
+	velocity = Vector2(-2,50)
 
 func _physics_process(delta):
-	print(sprite.get_position().y)
 	match state:
 		"bouncing":
 			if sprite.position.y >= -1 && zVelocity > 0:
 				sprite.position.y = -1
 				if abs(zVelocity) >= abs(zVelocityPrev) && zVelocityPrev != 0:
 					zVelocity = 0
-					changeState("still")
+					if velocity != Vector2.ZERO:
+						changeState("roll")
+					else:
+						changeState("still")
 				else:
 					velocity = velocity*0.9
 					zVelocityPrev = zVelocity
@@ -35,15 +38,20 @@ func _physics_process(delta):
 				pass
 			sprite.move_local_y(zVelocity*delta)
 			zVelocity = zVelocity+gravity*delta
-			if sprite.position.y <= -100:
+			
+			if sprite.position.y <= -70:
 				size = 8
-			elif sprite.position.y <= -50:
+			elif sprite.position.y <= -35:
 				size = 6
 			else:
 				size = 4
+			player.set_speed_scale(velocity.length()/25)
+			player.play(str(size)+vectorToString(velocity))
+			
 			move_and_slide()
-			player.play("4down")
-			pass
+		"roll":
+			velocity = velocity.move_toward(Vector2.ZERO, friction*delta)
+			move_and_slide()
 		"still":
 			pass
 		"preserve":
@@ -54,7 +62,7 @@ func _physics_process(delta):
 func changeState(desiredState):
 	match state:
 		"bouncing":
-			pass
+			sprite.position.y = -1
 		"rolling":
 			pass
 		"still":
@@ -78,6 +86,19 @@ func changeState(desiredState):
 	
 	state = desiredState
 
+func vectorToString(vec):
+	vec = vec.normalized()
+	var string = ""
+	if vec.y >= 0.382683:
+		string += "down"
+	elif vec.y <= -0.382683:
+		string += "up"
+	if vec.x >= 0.382683:
+		string += "right"
+	elif vec.x <= -0.382683:
+		string += "left"
+	return string
+
 func _on_hit_box_area_entered(area):
 	if ballShadowHitBox.has_overlapping_areas() && netCollision == false:
 		netCollision = true
@@ -88,7 +109,6 @@ func _on_hit_box_area_entered(area):
 			velocity = velocity*-0.7
 
 func _on_shadow_hit_box_area_entered(area):
-	print(area)
 	if area.get_name().contains("Racket") && sprite.position.y > -20 && racketCollision == false:
 		racketCollision = true
 		netCollision = false
@@ -101,7 +121,7 @@ func _on_shadow_hit_box_area_entered(area):
 			velocity = velocity*0.5
 			zVelocity = zVelocity*0.5
 		else:
-			velocity = velocity*-0.7
+			velocity = velocity*-0.2
 	elif area.get_name().contains("Boundary"):
 		velocity = -velocity*0.9
-		print("Test")
+		netCollision = false

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brw31lmmhy6e2"
-path="res://.godot/imported/ball roll vertical.png-a2f628f7601848eddfa6fba8ec4ee6bc.ctex"
+uid="uid://siiy2qnfg71m"
+path="res://.godot/imported/thumbstick_base.png-60328579523a55198b4ce3fe49af8d1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Court/ball roll vertical.png"
-dest_files=["res://.godot/imported/ball roll vertical.png-a2f628f7601848eddfa6fba8ec4ee6bc.ctex"]
+source_file="res://Assets/Controls/thumbstick_base.png"
+dest_files=["res://.godot/imported/thumbstick_base.png-60328579523a55198b4ce3fe49af8d1d.ctex"]
 
 [params]
 

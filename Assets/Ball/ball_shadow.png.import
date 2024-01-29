@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1y7k1hwny4vh"
-path="res://.godot/imported/ball roll diagonal.png-997098c19c7276c3c8148485a6abc619.ctex"
+uid="uid://c6spxxmclwwo4"
+path="res://.godot/imported/ball_shadow.png-3d437e13936890d9cf582cf7d55dcb05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Court/ball roll diagonal.png"
-dest_files=["res://.godot/imported/ball roll diagonal.png-997098c19c7276c3c8148485a6abc619.ctex"]
+source_file="res://Assets/Ball/ball_shadow.png"
+dest_files=["res://.godot/imported/ball_shadow.png-3d437e13936890d9cf582cf7d55dcb05.ctex"]
 
 [params]
 

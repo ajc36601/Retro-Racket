@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhfx6y30s4ad6"
-path="res://.godot/imported/ball.png-a881cbeba96ddd964687bf8f3cdb61a5.ctex"
+uid="uid://b3wk6o3wwpo7d"
+path="res://.godot/imported/thumbstick.png-f8446ca8ed8fe6471c27d8c3e8bd6b0e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Court/ball.png"
-dest_files=["res://.godot/imported/ball.png-a881cbeba96ddd964687bf8f3cdb61a5.ctex"]
+source_file="res://Assets/Controls/thumbstick.png"
+dest_files=["res://.godot/imported/thumbstick.png-f8446ca8ed8fe6471c27d8c3e8bd6b0e.ctex"]
 
 [params]
 

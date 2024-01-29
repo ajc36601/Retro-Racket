@@ -1,7 +1,8 @@
-[gd_scene load_steps=94 format=3 uid="uid://dd5rh2h5ix30s"]
+[gd_scene load_steps=97 format=3 uid="uid://dd5rh2h5ix30s"]
 
+[ext_resource type="Script" path="res://Scripts/game.gd" id="1_3tjy2"]
 [ext_resource type="Texture2D" uid="uid://qaajgxc7styj" path="res://Assets/Court/Court_Artificial.png" id="1_eovlu"]
-[ext_resource type="Script" path="res://Scenes/player.gd" id="2_nab00"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="2_nab00"]
 [ext_resource type="Texture2D" uid="uid://fa2vhe6g4epc" path="res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_South_Left_strip4.png" id="3_gegrb"]
 [ext_resource type="Texture2D" uid="uid://q7aj1255uc6u" path="res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_South_Right_strip4.png" id="4_pvwl1"]
 [ext_resource type="Texture2D" uid="uid://cq0c3wd8vn67w" path="res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_North_Left_strip4.png" id="5_efm2s"]
@@ -15,9 +16,9 @@
 [ext_resource type="Texture2D" uid="uid://csl7h4cgg015r" path="res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_North_Right_strip3.png" id="12_0kwk7"]
 [ext_resource type="Texture2D" uid="uid://dln5jkq0k1wjo" path="res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Left_strip3.png" id="13_uqsfg"]
 [ext_resource type="Texture2D" uid="uid://cuhlbhfdlav0g" path="res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Right_strip3.png" id="14_m3op7"]
-[ext_resource type="Script" path="res://Scenes/ball.gd" id="15_yy5rj"]
+[ext_resource type="Script" path="res://Scripts/ball.gd" id="15_yy5rj"]
 [ext_resource type="Texture2D" uid="uid://n7cpframe7xh" path="res://Assets/Ball/4x4/ball roll down.png" id="17_74e7s"]
-[ext_resource type="Texture2D" uid="uid://c6spxxmclwwo4" path="res://Assets/Court/ball_shadow.png" id="17_atl74"]
+[ext_resource type="Texture2D" uid="uid://c6spxxmclwwo4" path="res://Assets/Ball/ball_shadow.png" id="17_atl74"]
 [ext_resource type="Texture2D" uid="uid://c4x4abakan5ha" path="res://Assets/Ball/4x4/ball roll downleft.png" id="19_2mgwg"]
 [ext_resource type="Texture2D" uid="uid://cu4g762bebyuw" path="res://Assets/Ball/4x4/ball roll downright.png" id="20_gdpfd"]
 [ext_resource type="Texture2D" uid="uid://dcvh5m1crjljx" path="res://Assets/Ball/4x4/ball roll left.png" id="21_a7qng"]
@@ -41,6 +42,8 @@
 [ext_resource type="Texture2D" uid="uid://0q2errxygl7o" path="res://Assets/Ball/8x8/ball roll up.png" id="39_eqwy3"]
 [ext_resource type="Texture2D" uid="uid://cowfoahf4d7j8" path="res://Assets/Ball/8x8/ball roll upleft.png" id="40_s86ow"]
 [ext_resource type="Texture2D" uid="uid://dvtfplgy6tm7m" path="res://Assets/Ball/8x8/ball roll upright.png" id="41_1obfu"]
+[ext_resource type="Texture2D" uid="uid://siiy2qnfg71m" path="res://Assets/Controls/thumbstick_base.png" id="43_ykxl5"]
+[ext_resource type="Texture2D" uid="uid://b3wk6o3wwpo7d" path="res://Assets/Controls/thumbstick.png" id="44_qxers"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_kheet"]
 
@@ -644,33 +647,6 @@ radius = 2.23607
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_us556"]
 radius = 2.06155
-
-[sub_resource type="Animation" id="Animation_nynf5"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("sprite:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("17_74e7s")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("sprite:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
 
 [sub_resource type="Animation" id="Animation_f0hbm"]
 resource_name = "down4"
@@ -1368,6 +1344,33 @@ tracks/1/keys = {
 "values": [ExtResource("41_1obfu")]
 }
 
+[sub_resource type="Animation" id="Animation_nynf5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("17_74e7s")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sprite:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_k6tqe"]
 _data = {
 "4down": SubResource("Animation_f0hbm"),
@@ -1398,6 +1401,8 @@ _data = {
 }
 
 [node name="game" type="Node2D"]
+position = Vector2(96, 0)
+script = ExtResource("1_3tjy2")
 metadata/_edit_horizontal_guides_ = []
 
 [node name="court" type="Sprite2D" parent="."]
@@ -1579,6 +1584,14 @@ debug_color = Color(0, 0.6, 0.701961, 0.419608)
 libraries = {
 "": SubResource("AnimationLibrary_k6tqe")
 }
+
+[node name="thumbstickBase" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-50, 149)
+texture = ExtResource("43_ykxl5")
+
+[node name="thumbstick" type="Sprite2D" parent="thumbstickBase"]
+texture = ExtResource("44_qxers")
 
 [connection signal="area_entered" from="court/ySort/ball/sprite/BallHitBox" to="court/ySort/ball" method="_on_hit_box_area_entered"]
 [connection signal="area_entered" from="court/ySort/ball/BallShadowHitBox" to="court/ySort/ball" method="_on_shadow_hit_box_area_entered"]
