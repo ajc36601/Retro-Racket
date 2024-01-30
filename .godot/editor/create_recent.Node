@@ -1,3 +1,5 @@
+ColorRect
+Node2D
 SubViewport
 Sprite2D
 AnimationPlayer
@@ -5,4 +7,3 @@ CollisionShape2D
 Area2D
 CharacterBody2D
 StaticBody2D
-Node2D

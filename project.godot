@@ -16,10 +16,12 @@ config/features=PackedStringArray("4.2", "Mobile")
 
 [display]
 
-window/size/viewport_width=464
-window/size/viewport_height=261
+window/size/viewport_width=544
+window/size/viewport_height=309
 window/size/mode=2
+window/size/initial_position_type=0
 window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 
 [input]
 

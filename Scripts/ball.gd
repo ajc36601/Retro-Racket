@@ -50,6 +50,7 @@ func _physics_process(delta):
 			
 			move_and_slide()
 		"roll":
+			player.set_speed_scale(velocity.length()/25)
 			velocity = velocity.move_toward(Vector2.ZERO, friction*delta)
 			move_and_slide()
 		"still":

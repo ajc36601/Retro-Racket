@@ -1401,9 +1401,17 @@ _data = {
 }
 
 [node name="game" type="Node2D"]
-position = Vector2(96, 0)
+position = Vector2(136, 26)
 script = ExtResource("1_3tjy2")
 metadata/_edit_horizontal_guides_ = []
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -6
+offset_left = -246.0
+offset_top = -129.0
+offset_right = 500.0
+offset_bottom = 359.0
+color = Color(0, 0.447059, 0.490196, 1)
 
 [node name="court" type="Sprite2D" parent="."]
 z_index = -4
