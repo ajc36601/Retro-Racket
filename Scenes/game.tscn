@@ -1,4 +1,4 @@
-[gd_scene load_steps=97 format=3 uid="uid://dd5rh2h5ix30s"]
+[gd_scene load_steps=99 format=3 uid="uid://dd5rh2h5ix30s"]
 
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_3tjy2"]
 [ext_resource type="Texture2D" uid="uid://qaajgxc7styj" path="res://Assets/Court/Court_Artificial.png" id="1_eovlu"]
@@ -44,6 +44,8 @@
 [ext_resource type="Texture2D" uid="uid://dvtfplgy6tm7m" path="res://Assets/Ball/8x8/ball roll upright.png" id="41_1obfu"]
 [ext_resource type="Texture2D" uid="uid://siiy2qnfg71m" path="res://Assets/Controls/thumbstick_base.png" id="43_ykxl5"]
 [ext_resource type="Texture2D" uid="uid://b3wk6o3wwpo7d" path="res://Assets/Controls/thumbstick.png" id="44_qxers"]
+[ext_resource type="Texture2D" uid="uid://b7y4fxhbipuox" path="res://Assets/Court/background.png" id="45_54gc2"]
+[ext_resource type="Texture2D" uid="uid://na7ygerw6ja8" path="res://Assets/Court/dPad-Sheet.png" id="46_dni77"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_kheet"]
 
@@ -1405,7 +1407,7 @@ position = Vector2(136, 26)
 script = ExtResource("1_3tjy2")
 metadata/_edit_horizontal_guides_ = []
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="background" type="ColorRect" parent="."]
 z_index = -6
 offset_left = -246.0
 offset_top = -129.0
@@ -1413,12 +1415,17 @@ offset_right = 500.0
 offset_bottom = 359.0
 color = Color(0, 0.447059, 0.490196, 1)
 
+[node name="console" type="Sprite2D" parent="."]
+position = Vector2(136, 127.5)
+texture = ExtResource("45_54gc2")
+
 [node name="court" type="Sprite2D" parent="."]
 z_index = -4
 position = Vector2(136, 128)
 texture = ExtResource("1_eovlu")
 
 [node name="bottomBoundary" type="StaticBody2D" parent="court"]
+visible = false
 position = Vector2(2, 142)
 
 [node name="collision" type="CollisionShape2D" parent="court/bottomBoundary"]
@@ -1433,6 +1440,7 @@ position = Vector2(-1.5, -1.5)
 shape = SubResource("RectangleShape2D_s4tgj")
 
 [node name="topBoundary" type="StaticBody2D" parent="court"]
+visible = false
 position = Vector2(2, -68)
 
 [node name="collision" type="CollisionShape2D" parent="court/topBoundary"]
@@ -1449,6 +1457,7 @@ position = Vector2(-1.5, -11)
 shape = SubResource("RectangleShape2D_t513v")
 
 [node name="leftBoundary" type="StaticBody2D" parent="court"]
+visible = false
 position = Vector2(-141, 17)
 
 [node name="collision" type="CollisionShape2D" parent="court/leftBoundary"]
@@ -1464,6 +1473,7 @@ position = Vector2(2, 13.5)
 shape = SubResource("RectangleShape2D_qwp8s")
 
 [node name="rightBoundary" type="StaticBody2D" parent="court"]
+visible = false
 position = Vector2(141, 18)
 
 [node name="collision" type="CollisionShape2D" parent="court/rightBoundary"]
@@ -1600,6 +1610,11 @@ texture = ExtResource("43_ykxl5")
 
 [node name="thumbstick" type="Sprite2D" parent="thumbstickBase"]
 texture = ExtResource("44_qxers")
+
+[node name="DPad-sheet" type="Sprite2D" parent="."]
+position = Vector2(-76, 130)
+texture = ExtResource("46_dni77")
+hframes = 2
 
 [connection signal="area_entered" from="court/ySort/ball/sprite/BallHitBox" to="court/ySort/ball" method="_on_hit_box_area_entered"]
 [connection signal="area_entered" from="court/ySort/ball/BallShadowHitBox" to="court/ySort/ball" method="_on_shadow_hit_box_area_entered"]
