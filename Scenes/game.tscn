@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=3 uid="uid://dd5rh2h5ix30s"]
+[gd_scene load_steps=103 format=3 uid="uid://dd5rh2h5ix30s"]
 
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_3tjy2"]
 [ext_resource type="Texture2D" uid="uid://qaajgxc7styj" path="res://Assets/Court/Court_Artificial.png" id="1_eovlu"]
@@ -46,6 +46,18 @@
 [ext_resource type="Texture2D" uid="uid://b3wk6o3wwpo7d" path="res://Assets/Controls/thumbstick.png" id="44_qxers"]
 [ext_resource type="Texture2D" uid="uid://b7y4fxhbipuox" path="res://Assets/Court/background.png" id="45_54gc2"]
 [ext_resource type="Texture2D" uid="uid://na7ygerw6ja8" path="res://Assets/Court/dPad-Sheet.png" id="46_dni77"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_lyuh0"]
+points = PackedVector2Array(0, 0, -40, -60, -60, -40, -60, 40, -40, 60)
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_rrykv"]
+points = PackedVector2Array(0, 0, 40, -60, 60, -40, 60, 40, 40, 60)
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_86gj6"]
+points = PackedVector2Array(0, 0, -60, -40, -40, -60, 40, -60, 60, -40)
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_p6ast"]
+points = PackedVector2Array(0, 0, 60, 40, 40, 60, -40, 60, -60, 40)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_kheet"]
 
@@ -1416,8 +1428,35 @@ offset_bottom = 359.0
 color = Color(0, 0.447059, 0.490196, 1)
 
 [node name="console" type="Sprite2D" parent="."]
+z_index = 1
+z_as_relative = false
 position = Vector2(136, 127.5)
 texture = ExtResource("45_54gc2")
+
+[node name="dpad" type="Sprite2D" parent="."]
+z_index = 2
+z_as_relative = false
+position = Vector2(-78, 120)
+texture = ExtResource("46_dni77")
+hframes = 2
+region_enabled = true
+region_rect = Rect2(0, 0, 240, 120)
+
+[node name="leftbutton" type="TouchScreenButton" parent="dpad"]
+shape = SubResource("ConvexPolygonShape2D_lyuh0")
+passby_press = true
+
+[node name="rightbutton" type="TouchScreenButton" parent="dpad"]
+shape = SubResource("ConvexPolygonShape2D_rrykv")
+passby_press = true
+
+[node name="upbutton" type="TouchScreenButton" parent="dpad"]
+shape = SubResource("ConvexPolygonShape2D_86gj6")
+passby_press = true
+
+[node name="downbutton" type="TouchScreenButton" parent="dpad"]
+shape = SubResource("ConvexPolygonShape2D_p6ast")
+passby_press = true
 
 [node name="court" type="Sprite2D" parent="."]
 z_index = -4
@@ -1611,10 +1650,13 @@ texture = ExtResource("43_ykxl5")
 [node name="thumbstick" type="Sprite2D" parent="thumbstickBase"]
 texture = ExtResource("44_qxers")
 
-[node name="DPad-sheet" type="Sprite2D" parent="."]
-position = Vector2(-76, 130)
-texture = ExtResource("46_dni77")
-hframes = 2
-
+[connection signal="pressed" from="dpad/leftbutton" to="." method="_on_leftbutton_pressed"]
+[connection signal="released" from="dpad/leftbutton" to="." method="_on_leftbutton_released"]
+[connection signal="pressed" from="dpad/rightbutton" to="." method="_on_rightbutton_pressed"]
+[connection signal="released" from="dpad/rightbutton" to="." method="_on_rightbutton_released"]
+[connection signal="pressed" from="dpad/upbutton" to="." method="_on_upbutton_pressed"]
+[connection signal="released" from="dpad/upbutton" to="." method="_on_upbutton_released"]
+[connection signal="pressed" from="dpad/downbutton" to="." method="_on_downbutton_pressed"]
+[connection signal="released" from="dpad/downbutton" to="." method="_on_downbutton_released"]
 [connection signal="area_entered" from="court/ySort/ball/sprite/BallHitBox" to="court/ySort/ball" method="_on_hit_box_area_entered"]
 [connection signal="area_entered" from="court/ySort/ball/BallShadowHitBox" to="court/ySort/ball" method="_on_shadow_hit_box_area_entered"]
