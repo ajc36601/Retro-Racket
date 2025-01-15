@@ -1,78 +1,99 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1706596220
-::res://Assets/::1706509034
-::res://Assets/Ball/::1706510339
-ball_shadow.png::CompressedTexture2D::6986807374570759025::1705042242::1706510339::1::::<><>::
-::res://Assets/Ball/4x4/::1706503550
-ball roll down.png::CompressedTexture2D::978663565213097013::1706503541::1706503550::1::::<><>::
-ball roll downleft.png::CompressedTexture2D::6857559367000993806::1706503541::1706503550::1::::<><>::
-ball roll downright.png::CompressedTexture2D::6236908312360560966::1706503541::1706503550::1::::<><>::
-ball roll left.png::CompressedTexture2D::7343470934516207245::1706503541::1706503550::1::::<><>::
-ball roll right.png::CompressedTexture2D::4956380185710103866::1706503541::1706503550::1::::<><>::
-ball roll up.png::CompressedTexture2D::9055849048150508262::1706503541::1706503550::1::::<><>::
-ball roll upleft.png::CompressedTexture2D::6128365645509533671::1706503541::1706503550::1::::<><>::
-ball roll upright.png::CompressedTexture2D::3652668430799708550::1706503541::1706503550::1::::<><>::
-::res://Assets/Ball/6x6/::1706500989
-ball roll down.png::CompressedTexture2D::1335646631754725095::1706500904::1706500989::1::::<><>::
-ball roll downleft.png::CompressedTexture2D::214948780895998983::1706500904::1706500989::1::::<><>::
-ball roll downright.png::CompressedTexture2D::1128472526228802083::1706500904::1706500989::1::::<><>::
-ball roll left.png::CompressedTexture2D::5108661486133882046::1706500904::1706500989::1::::<><>::
-ball roll right.png::CompressedTexture2D::7409534673369087553::1706500904::1706500989::1::::<><>::
-ball roll up.png::CompressedTexture2D::1598388794480819694::1706500904::1706500989::1::::<><>::
-ball roll upleft.png::CompressedTexture2D::1329087312688910242::1706500904::1706500989::1::::<><>::
-ball roll upright.png::CompressedTexture2D::4650605901946578464::1706500904::1706500989::1::::<><>::
-::res://Assets/Ball/8x8/::1706501908
-ball roll down.png::CompressedTexture2D::1484420485476535370::1706501895::1706501908::1::::<><>::
-ball roll downleft.png::CompressedTexture2D::3557429785302394796::1706501895::1706501908::1::::<><>::
-ball roll downright.png::CompressedTexture2D::109669006181348936::1706501895::1706501908::1::::<><>::
-ball roll left.png::CompressedTexture2D::6801036593998910611::1706501895::1706501908::1::::<><>::
-ball roll right.png::CompressedTexture2D::8287298692106678793::1706501895::1706501908::1::::<><>::
-ball roll up.png::CompressedTexture2D::1789398557232044106::1706501895::1706501908::1::::<><>::
-ball roll upleft.png::CompressedTexture2D::5801230086066188443::1706501895::1706501908::1::::<><>::
-ball roll upright.png::CompressedTexture2D::8672781904835841156::1706501895::1706501908::1::::<><>::
-::res://Assets/Controls/::1706509034
-thumbstick.png::CompressedTexture2D::4397787925297050515::1706509029::1706509032::1::::<><>::
-thumbstick_base.png::CompressedTexture2D::1280444245957850784::1706509029::1706509034::1::::<><>::
-::res://Assets/Court/::1706684637
-background.png::CompressedTexture2D::4683779686874747419::1706680708::1706680708::1::::<><>::
-Chair_Left.png::CompressedTexture2D::7731178988976385850::1705034908::1705036510::1::::<><>::
-Chair_Right.png::CompressedTexture2D::7510813948476703869::1705034903::1705036512::1::::<><>::
-Court_Artificial.png::CompressedTexture2D::1123037921158628501::1705034793::1705036514::1::::<><>::
-dPad-Sheet.png::CompressedTexture2D::914441092239014333::1706684637::1706684637::1::::<><>::
-Net.png::CompressedTexture2D::6679356690800009077::1705034796::1705036519::1::::<><>::
-Sprite-0004.png::CompressedTexture2D::7519643358627117116::1706594229::1706594229::1::::<><>::
-::res://Assets/Players/::1705036545
-::res://Assets/Players/Female1/::1705036972
-::res://Assets/Players/Female1/idle/::1705036568
-Player_Female_A_T1_Idle_North_Left_strip4.png::CompressedTexture2D::5947644907337181034::1696904945::1705036563::1::::<><>::
-Player_Female_A_T1_Idle_North_Right_strip4.png::CompressedTexture2D::6292022138613590931::1696904945::1705036565::1::::<><>::
-Player_Female_A_T1_Idle_South_Left_strip4.png::CompressedTexture2D::352621453927189048::1696904945::1705036566::1::::<><>::
-Player_Female_A_T1_Idle_South_Right_strip4.png::CompressedTexture2D::1189099067204340282::1696904945::1705036568::1::::<><>::
-::res://Assets/Players/Female1/run/::1705036587
-Player_Female_A_T1_Run_North_Left_strip4.png::CompressedTexture2D::224425948273986914::1696904945::1705036582::1::::<><>::
-Player_Female_A_T1_Run_North_Right_strip4.png::CompressedTexture2D::6458881983668074903::1696904945::1705036584::1::::<><>::
-Player_Female_A_T1_Run_South_Left_strip4.png::CompressedTexture2D::3869314159039304461::1696904945::1705036585::1::::<><>::
-Player_Female_A_T1_Run_South_Right_strip4.png::CompressedTexture2D::1862420383054213517::1696904945::1705036587::1::::<><>::
-::res://Assets/Players/Female1/swing/::1705036972
-Player_Female_A_T1_Hit_North_Left_strip3.png::CompressedTexture2D::8596062801892264215::1705036946::1705036967::1::::<><>::
-Player_Female_A_T1_Hit_North_Right_strip3.png::CompressedTexture2D::6060905679039710941::1705036954::1705036969::1::::<><>::
-Player_Female_A_T1_Hit_South_Left_strip3.png::CompressedTexture2D::7960014374929243176::1705036959::1705036970::1::::<><>::
-Player_Female_A_T1_Hit_South_Right_strip3.png::CompressedTexture2D::6191738932678108412::1705036962::1705036972::1::::<><>::
-::res://Icons/::1706509216
-40x40.png::CompressedTexture2D::7255291446946402413::1706485489::1706509216::1::::<><>::
-58x58.png::CompressedTexture2D::8398118499244166731::1706485489::1706509216::1::::<><>::
-60x60.png::CompressedTexture2D::5414915665533217591::1706485489::1706509216::1::::<><>::
-76x76.png::CompressedTexture2D::6740656354347874290::1706485489::1706509216::1::::<><>::
-80x80.png::CompressedTexture2D::3869952376892769546::1706485489::1706509216::1::::<><>::
-87x87.png::CompressedTexture2D::1498319453696351259::1706485489::1706509216::1::::<><>::
-120x120.png::CompressedTexture2D::7072946596165536578::1706485489::1706509216::1::::<><>::
-152x152.png::CompressedTexture2D::504601195808055032::1706485489::1706509216::1::::<><>::
-167x167.png::CompressedTexture2D::3220814434293098303::1706485489::1706509216::1::::<><>::
-180x180.png::CompressedTexture2D::255528324440033954::1706485489::1706509216::1::::<><>::
-1024x1024.png::CompressedTexture2D::1398206592430156161::1706485489::1706509216::1::::<><>::
-::res://Scenes/::1706680712
-game.tscn::PackedScene::7432806034368333196::1706680712::0::1::::<><>::res://Scripts/game.gd<>uid://qaajgxc7styj::::res://Assets/Court/Court_Artificial.png<>res://Scripts/player.gd<>uid://fa2vhe6g4epc::::res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_South_Left_strip4.png<>uid://q7aj1255uc6u::::res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_South_Right_strip4.png<>uid://cq0c3wd8vn67w::::res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_North_Left_strip4.png<>uid://cvv5xki450i2v::::res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_North_Right_strip4.png<>uid://bvelbk7mdl81n::::res://Assets/Players/Female1/run/Player_Female_A_T1_Run_South_Left_strip4.png<>uid://1sf16djo1qjl::::res://Assets/Players/Female1/run/Player_Female_A_T1_Run_South_Right_strip4.png<>uid://dgyi6sn2u5o5::::res://Assets/Players/Female1/run/Player_Female_A_T1_Run_North_Left_strip4.png<>uid://cyay3wcg3asrn::::res://Assets/Players/Female1/run/Player_Female_A_T1_Run_North_Right_strip4.png<>uid://c2fsa8lgidlfh::::res://Assets/Court/Net.png<>uid://dup85susvrorf::::res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_North_Left_strip3.png<>uid://csl7h4cgg015r::::res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_North_Right_strip3.png<>uid://dln5jkq0k1wjo::::res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Left_strip3.png<>uid://cuhlbhfdlav0g::::res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Right_strip3.png<>res://Scripts/ball.gd<>uid://n7cpframe7xh::::res://Assets/Ball/4x4/ball roll down.png<>uid://c6spxxmclwwo4::::res://Assets/Ball/ball_shadow.png<>uid://c4x4abakan5ha::::res://Assets/Ball/4x4/ball roll downleft.png<>uid://cu4g762bebyuw::::res://Assets/Ball/4x4/ball roll downright.png<>uid://dcvh5m1crjljx::::res://Assets/Ball/4x4/ball roll left.png<>uid://ccu54fkcdsug5::::res://Assets/Ball/4x4/ball roll right.png<>uid://d2ayrmonrscxq::::res://Assets/Ball/4x4/ball roll up.png<>uid://ctkvj0tax3ejv::::res://Assets/Ball/4x4/ball roll upleft.png<>uid://bsbm6egvupynu::::res://Assets/Ball/4x4/ball roll upright.png<>uid://ta851bt32ipr::::res://Assets/Ball/6x6/ball roll down.png<>uid://dcef7k4pg5j4::::res://Assets/Ball/6x6/ball roll downleft.png<>uid://qcv1o7f08nm6::::res://Assets/Ball/6x6/ball roll downright.png<>uid://ce1w548rc530m::::res://Assets/Ball/6x6/ball roll left.png<>uid://ddth7ojkhjwbp::::res://Assets/Ball/6x6/ball roll right.png<>uid://w1jh21xepb7s::::res://Assets/Ball/6x6/ball roll up.png<>uid://s624ygd1gsfa::::res://Assets/Ball/6x6/ball roll upleft.png<>uid://b7i12grdn4hfc::::res://Assets/Ball/6x6/ball roll upright.png<>uid://vfcgn6tcecc5::::res://Assets/Ball/8x8/ball roll down.png<>uid://bqxil4h5vkj0w::::res://Assets/Ball/8x8/ball roll downleft.png<>uid://bteh51sdndoi::::res://Assets/Ball/8x8/ball roll downright.png<>uid://c35qcxnl06g7t::::res://Assets/Ball/8x8/ball roll left.png<>uid://dqcoumcdu2ed2::::res://Assets/Ball/8x8/ball roll right.png<>uid://0q2errxygl7o::::res://Assets/Ball/8x8/ball roll up.png<>uid://cowfoahf4d7j8::::res://Assets/Ball/8x8/ball roll upleft.png<>uid://dvtfplgy6tm7m::::res://Assets/Ball/8x8/ball roll upright.png<>uid://siiy2qnfg71m::::res://Assets/Controls/thumbstick_base.png<>uid://b3wk6o3wwpo7d::::res://Assets/Controls/thumbstick.png<>uid://b7y4fxhbipuox::::res://Assets/Court/background.png
-::res://Scripts/::1706598095
-ball.gd::GDScript::-1::1706591906::0::1::::<>CharacterBody2D<>::
-game.gd::GDScript::-1::1706598095::0::1::::<>Node2D<>::
-player.gd::GDScript::-1::1706514353::0::1::::<>CharacterBody2D<>::
+::res://::1731100386
+export_presets.cfg::TextFile::-1::1706164953::0::1::::<><>::
+::res://Assets/::1717564337
+::res://Assets/Ball/::1706547183
+ball_shadow.png::CompressedTexture2D::6986807374570759025::1706547183::1706547183::1::::<><>::
+::res://Assets/Ball/4x4/::1706547183
+ball roll down.png::CompressedTexture2D::978663565213097013::1706547183::1706547183::1::::<><>::
+ball roll downleft.png::CompressedTexture2D::6857559367000993806::1706547183::1706547183::1::::<><>::
+ball roll downright.png::CompressedTexture2D::6236908312360560966::1706547183::1706547183::1::::<><>::
+ball roll left.png::CompressedTexture2D::7343470934516207245::1706547183::1706547183::1::::<><>::
+ball roll right.png::CompressedTexture2D::4956380185710103866::1706547183::1706547183::1::::<><>::
+ball roll up.png::CompressedTexture2D::9055849048150508262::1706547183::1706547183::1::::<><>::
+ball roll upleft.png::CompressedTexture2D::6128365645509533671::1706547183::1706547183::1::::<><>::
+ball roll upright.png::CompressedTexture2D::3652668430799708550::1706547183::1706547183::1::::<><>::
+::res://Assets/Ball/6x6/::1706501216
+ball roll down.png::CompressedTexture2D::1335646631754725095::1706501216::1706501216::1::::<><>::
+ball roll downleft.png::CompressedTexture2D::214948780895998983::1706501216::1706501216::1::::<><>::
+ball roll downright.png::CompressedTexture2D::1128472526228802083::1706501216::1706501216::1::::<><>::
+ball roll left.png::CompressedTexture2D::5108661486133882046::1706501216::1706501216::1::::<><>::
+ball roll right.png::CompressedTexture2D::7409534673369087553::1706501216::1706501216::1::::<><>::
+ball roll up.png::CompressedTexture2D::1598388794480819694::1706501216::1706501216::1::::<><>::
+ball roll upleft.png::CompressedTexture2D::1329087312688910242::1706501216::1706501216::1::::<><>::
+ball roll upright.png::CompressedTexture2D::4650605901946578464::1706501216::1706501216::1::::<><>::
+::res://Assets/Ball/8x8/::1706547183
+ball roll down.png::CompressedTexture2D::1484420485476535370::1706547183::1706547183::1::::<><>::
+ball roll downleft.png::CompressedTexture2D::3557429785302394796::1706547183::1706547183::1::::<><>::
+ball roll downright.png::CompressedTexture2D::109669006181348936::1706547183::1706547183::1::::<><>::
+ball roll left.png::CompressedTexture2D::6801036593998910611::1706547183::1706547183::1::::<><>::
+ball roll right.png::CompressedTexture2D::8287298692106678793::1706547183::1706547183::1::::<><>::
+ball roll up.png::CompressedTexture2D::1789398557232044106::1706547183::1706547183::1::::<><>::
+ball roll upleft.png::CompressedTexture2D::5801230086066188443::1706547183::1706547183::1::::<><>::
+ball roll upright.png::CompressedTexture2D::8672781904835841156::1706547183::1706547183::1::::<><>::
+::res://Assets/Controls/::1706547183
+thumbstick.png::CompressedTexture2D::4397787925297050515::1706547183::1706547183::1::::<><>::
+thumbstick_base.png::CompressedTexture2D::1280444245957850784::1706547183::1706547183::1::::<><>::
+::res://Assets/Court/::1706944681
+background.png::CompressedTexture2D::4683779686874747419::1706944681::1706944681::1::::<><>::
+Chair_Left.png::CompressedTexture2D::7731178988976385850::1705083248::1705083248::1::::<><>::
+Chair_Right.png::CompressedTexture2D::7510813948476703869::1705083248::1705083248::1::::<><>::
+Court_Artificial.png::CompressedTexture2D::1123037921158628501::1705083248::1705083248::1::::<><>::
+dPad-Sheet.png::CompressedTexture2D::914441092239014333::1706944681::1706944681::1::::<><>::
+Net.png::CompressedTexture2D::6679356690800009077::1705083248::1705083248::1::::<><>::
+Sprite-0004.png::CompressedTexture2D::7519643358627117116::1706944681::1706944681::1::::<><>::
+::res://Assets/Fonts/::1717564326
+PixelifySans-VariableFont_wght.ttf::FontFile::8872202640843024254::1717478212::1717481057::1::::<><>::
+::res://Assets/Overlays/::1717564337
+meter.png::CompressedTexture2D::6538600049600903953::1717210445::1717210449::1::::<><>::
+x_marker.png::CompressedTexture2D::6825976619498950781::1717564322::1717564337::1::::<><>::
+::res://Assets/Players/::1705083248
+::res://Assets/Players/Female1/::1717471283
+::res://Assets/Players/Female1/idle/::1705083248
+Player_Female_A_T1_Idle_North_Left_strip4.png::CompressedTexture2D::5947644907337181034::1705083248::1705083248::1::::<><>::
+Player_Female_A_T1_Idle_North_Right_strip4.png::CompressedTexture2D::6292022138613590931::1705083248::1705083248::1::::<><>::
+Player_Female_A_T1_Idle_South_Left_strip4.png::CompressedTexture2D::352621453927189048::1705083248::1705083248::1::::<><>::
+Player_Female_A_T1_Idle_South_Right_strip4.png::CompressedTexture2D::1189099067204340282::1705083248::1705083248::1::::<><>::
+::res://Assets/Players/Female1/run/::1705083248
+Player_Female_A_T1_Run_North_Left_strip4.png::CompressedTexture2D::224425948273986914::1705083248::1705083248::1::::<><>::
+Player_Female_A_T1_Run_North_Right_strip4.png::CompressedTexture2D::6458881983668074903::1705083248::1705083248::1::::<><>::
+Player_Female_A_T1_Run_South_Left_strip4.png::CompressedTexture2D::3869314159039304461::1705083248::1705083248::1::::<><>::
+Player_Female_A_T1_Run_South_Right_strip4.png::CompressedTexture2D::1862420383054213517::1705083248::1705083248::1::::<><>::
+::res://Assets/Players/Female1/serve/::1716784223
+Player_Female_A_T1_Serve_North_Left_strip4.png::CompressedTexture2D::8411739412105372708::1716784207::1716784216::1::::<><>::
+Player_Female_A_T1_Serve_North_Right_strip4.png::CompressedTexture2D::5232159675378490541::1716784207::1716784218::1::::<><>::
+Player_Female_A_T1_Serve_South_Left_strip4.png::CompressedTexture2D::8393496219723988472::1716784207::1716784221::1::::<><>::
+Player_Female_A_T1_Serve_South_Right_strip4.png::CompressedTexture2D::6799176999177048159::1716784207::1716784223::1::::<><>::
+::res://Assets/Players/Female1/smash/::1717478218
+Player_Female_A_T1_Smash_North_Right_strip2.png::CompressedTexture2D::6037287036153018299::1717471272::1717471283::1::::<><>::
+Player_Female_A_T1_Smash_South_Right_strip2.png::CompressedTexture2D::3096252812705344289::1717471295::1717471295::1::::<><>::
+::res://Assets/Players/Female1/swing/::1705083248
+Player_Female_A_T1_Hit_North_Left_strip3.png::CompressedTexture2D::8596062801892264215::1705083248::1705083248::1::::<><>::
+Player_Female_A_T1_Hit_North_Right_strip3.png::CompressedTexture2D::6060905679039710941::1705083248::1705083248::1::::<><>::
+Player_Female_A_T1_Hit_South_Left_strip3.png::CompressedTexture2D::7960014374929243176::1705083248::1705083248::1::::<><>::
+Player_Female_A_T1_Hit_South_Right_strip3.png::CompressedTexture2D::6191738932678108412::1705083248::1705083248::1::::<><>::
+::res://Assets/Weather/::1717132643
+puddle.png::CompressedTexture2D::7343008415481369210::1717132643::1717132643::1::::<><>::
+rain_drop.png::CompressedTexture2D::1712656134068732255::1717108280::1717109566::1::::<><>::
+::res://icons/::1706945414
+40x40.png::CompressedTexture2D::7255291446946402413::1706164878::1706945413::1::::<><>::
+58x58.png::CompressedTexture2D::8398118499244166731::1706164878::1706945413::1::::<><>::
+60x60.png::CompressedTexture2D::5414915665533217591::1706164878::1706945413::1::::<><>::
+76x76.png::CompressedTexture2D::6740656354347874290::1706164187::1706945413::1::::<><>::
+80x80.png::CompressedTexture2D::3869952376892769546::1706164878::1706945413::1::::<><>::
+87x87.png::CompressedTexture2D::1498319453696351259::1706164878::1706945413::1::::<><>::
+120x120.png::CompressedTexture2D::7072946596165536578::1706164075::1706945413::1::::<><>::
+152x152.png::CompressedTexture2D::504601195808055032::1706164449::1706945413::1::::<><>::
+167x167.png::CompressedTexture2D::3220814434293098303::1706164449::1706945413::1::::<><>::
+180x180.png::CompressedTexture2D::255528324440033954::1706164067::1706945413::1::::<><>::
+1024x1024.png::CompressedTexture2D::1398206592430156161::1706164449::1706945414::1::::<><>::
+::res://Scenes/::1730126695
+game.tscn::PackedScene::7432806034368333196::1730126695::0::1::::<><>::res://Scripts/game.gd<>uid://qaajgxc7styj::::res://Assets/Court/Court_Artificial.png<>res://Scripts/player.gd<>uid://fa2vhe6g4epc::::res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_South_Left_strip4.png<>res://Scripts/weather.gd<>uid://q7aj1255uc6u::::res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_South_Right_strip4.png<>uid://cq0c3wd8vn67w::::res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_North_Left_strip4.png<>uid://cvv5xki450i2v::::res://Assets/Players/Female1/idle/Player_Female_A_T1_Idle_North_Right_strip4.png<>uid://bvelbk7mdl81n::::res://Assets/Players/Female1/run/Player_Female_A_T1_Run_South_Left_strip4.png<>uid://1sf16djo1qjl::::res://Assets/Players/Female1/run/Player_Female_A_T1_Run_South_Right_strip4.png<>uid://dgyi6sn2u5o5::::res://Assets/Players/Female1/run/Player_Female_A_T1_Run_North_Left_strip4.png<>uid://cyay3wcg3asrn::::res://Assets/Players/Female1/run/Player_Female_A_T1_Run_North_Right_strip4.png<>uid://c2fsa8lgidlfh::::res://Assets/Court/Net.png<>uid://dup85susvrorf::::res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_North_Left_strip3.png<>uid://csl7h4cgg015r::::res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_North_Right_strip3.png<>uid://dln5jkq0k1wjo::::res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Left_strip3.png<>uid://cuhlbhfdlav0g::::res://Assets/Players/Female1/swing/Player_Female_A_T1_Hit_South_Right_strip3.png<>res://Scripts/ball.gd<>uid://n7cpframe7xh::::res://Assets/Ball/4x4/ball roll down.png<>uid://c6spxxmclwwo4::::res://Assets/Ball/ball_shadow.png<>uid://cgsq51w3sojld::::res://Assets/Players/Female1/serve/Player_Female_A_T1_Serve_North_Right_strip4.png<>uid://c4x4abakan5ha::::res://Assets/Ball/4x4/ball roll downleft.png<>uid://dr3yeby7in861::::res://Assets/Players/Female1/serve/Player_Female_A_T1_Serve_North_Left_strip4.png<>uid://cu4g762bebyuw::::res://Assets/Ball/4x4/ball roll downright.png<>uid://c34tpmjyj4js6::::res://Assets/Players/Female1/serve/Player_Female_A_T1_Serve_South_Right_strip4.png<>uid://dcvh5m1crjljx::::res://Assets/Ball/4x4/ball roll left.png<>uid://drt4wk3p850jc::::res://Assets/Players/Female1/serve/Player_Female_A_T1_Serve_South_Left_strip4.png<>uid://ccu54fkcdsug5::::res://Assets/Ball/4x4/ball roll right.png<>uid://d2ayrmonrscxq::::res://Assets/Ball/4x4/ball roll up.png<>uid://c0fl11mrk3krh::::res://Assets/Overlays/meter.png<>uid://csariafhi5vct::::res://Assets/Players/Female1/smash/Player_Female_A_T1_Smash_North_Right_strip2.png<>uid://ctkvj0tax3ejv::::res://Assets/Ball/4x4/ball roll upleft.png<>res://Scripts/aiPlayer2.gd<>uid://bsbm6egvupynu::::res://Assets/Ball/4x4/ball roll upright.png<>uid://ta851bt32ipr::::res://Assets/Ball/6x6/ball roll down.png<>uid://dcef7k4pg5j4::::res://Assets/Ball/6x6/ball roll downleft.png<>uid://qcv1o7f08nm6::::res://Assets/Ball/6x6/ball roll downright.png<>uid://ce1w548rc530m::::res://Assets/Ball/6x6/ball roll left.png<>uid://ddth7ojkhjwbp::::res://Assets/Ball/6x6/ball roll right.png<>uid://w1jh21xepb7s::::res://Assets/Ball/6x6/ball roll up.png<>uid://s624ygd1gsfa::::res://Assets/Ball/6x6/ball roll upleft.png<>uid://b7i12grdn4hfc::::res://Assets/Ball/6x6/ball roll upright.png<>uid://vfcgn6tcecc5::::res://Assets/Ball/8x8/ball roll down.png<>uid://bqxil4h5vkj0w::::res://Assets/Ball/8x8/ball roll downleft.png<>uid://bteh51sdndoi::::res://Assets/Ball/8x8/ball roll downright.png<>uid://c35qcxnl06g7t::::res://Assets/Ball/8x8/ball roll left.png<>uid://dqcoumcdu2ed2::::res://Assets/Ball/8x8/ball roll right.png<>uid://0q2errxygl7o::::res://Assets/Ball/8x8/ball roll up.png<>uid://cowfoahf4d7j8::::res://Assets/Ball/8x8/ball roll upleft.png<>uid://dvtfplgy6tm7m::::res://Assets/Ball/8x8/ball roll upright.png<>uid://siiy2qnfg71m::::res://Assets/Controls/thumbstick_base.png<>uid://b3wk6o3wwpo7d::::res://Assets/Controls/thumbstick.png<>uid://b7y4fxhbipuox::::res://Assets/Court/background.png<>uid://na7ygerw6ja8::::res://Assets/Court/dPad-Sheet.png<>res://Scenes/MissAlert.gd<>uid://dyn047yvv1usk::::res://Assets/Fonts/PixelifySans-VariableFont_wght.ttf<>uid://c4is3qkopkpb6::::res://Assets/Overlays/x_marker.png
+MissAlert.gd::GDScript::-1::1717481523::0::1::::<>Node2D<>::
+::res://Scripts/::1727714877
+aiPlayer2.gd::GDScript::-1::1727714877::0::1::::<>CharacterBody2D<>::
+ball.gd::GDScript::-1::1727714847::0::1::::<>CharacterBody2D<>::
+game.gd::GDScript::-1::1720068769::0::1::::<>Node2D<>::
+player.gd::GDScript::-1::1720065695::0::1::::<>CharacterBody2D<>::
+rainDrop.gd::GDScript::-1::1717133714::0::1::::<>Sprite2D<>::
+weather.gd::GDScript::-1::1717527834::0::1::::<>Node2D<>::
